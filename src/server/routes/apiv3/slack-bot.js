@@ -100,6 +100,14 @@ module.exports = (crowi) => {
       await client.chat.postMessage('hogehoge');
     });
 
+    // echo command refer to https://slack.dev/bolt-js/ja-jp/concepts#commands
+    app.command('/echo', async({ command, ack, say }) => {
+      // command request confirmation
+      await ack();
+
+      await say(`${command.text}`);
+    });
+
     (async() => {
       await app.start(8080);
       console.log('app is running');
