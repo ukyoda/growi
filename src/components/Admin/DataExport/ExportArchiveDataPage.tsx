@@ -22,7 +22,7 @@ const IGNORED_COLLECTION_NAMES = [
 type Props = {
 };
 
-const ExportArchiveDataPage = (): JSX.Element => {
+export const ExportArchiveDataPage = (): JSX.Element => {
   const { t } = useTranslation();
 
   const [collections, setcollections] = useState([]);
@@ -153,8 +153,6 @@ const ExportArchiveDataPage = (): JSX.Element => {
   );
 
 };
-
-export default ExportArchiveDataPage;
 
 // TODO: make class component to functional one by GW5080
 
