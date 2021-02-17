@@ -15,10 +15,6 @@ import { apiDelete } from '~/client/js/util/apiv1-client';
 
 import { useTranslation } from '~/i18n';
 
-const IGNORED_COLLECTION_NAMES = [
-  'sessions',
-];
-
 type Props = {
 };
 
